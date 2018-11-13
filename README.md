@@ -1,7 +1,9 @@
 # Semaine Intensive d'Intégration | Équipe 10 - Néon
-<br>
+
+</br>
 __*:lollipop: :candy:  CHALAL FARAU FENNANE KICHENAMOURTY STEPHAN :candy: :lollipop:*__ 
-<br>
+
+</br>
 [Lien GitHub](https://github.com/Benjigo93/hetic-w1p2021-10-neon)
 
 ***
