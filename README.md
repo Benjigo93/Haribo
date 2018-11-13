@@ -1,6 +1,4 @@
-<div align="center">
-<h1> Semaine Intensive d'Intégration | Équipe 10 - Néon </h1>
-</div>
+#Semaine Intensive d'Intégration | Équipe 10 - Néon
 __*:lollipop: :candy:  CHALAL FARAU FENNANE KICHENAMOURTY STEPHAN :candy: :lollipop:*__
 
 &nbsp;
