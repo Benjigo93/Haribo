@@ -4,5 +4,5 @@
 [Lien GitHub](https://github.com/Benjigo93/hetic-w1p2021-10-neon)
 
 ***
-<img style="float:right;" src="../assets/haribo-logo.png" width="200" height="50"> <img style="float:right;" src="../assets/hetic-logo.png" width="200">
+<img src="../assets/haribo-logo.png" width="200" height="50"> <img src="../assets/hetic-logo.png" width="200">
 ***
