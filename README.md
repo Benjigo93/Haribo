@@ -4,7 +4,6 @@ __*:lollipop: :candy:  CHALAL FARAU FENNANE KICHENAMOURTY STEPHAN :candy: :lolli
 &nbsp;
 
 [Lien GitHub](https://github.com/Benjigo93/hetic-w1p2021-10-neon)
-
 &nbsp;
 
 [Lien du site internet](https://haribo.netlify.com/)
