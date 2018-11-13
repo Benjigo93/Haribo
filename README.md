@@ -3,5 +3,4 @@
 
 [Lien GitHub](https://github.com/Benjigo93/hetic-w1p2021-10-neon)
 
-![Logo Haribo](../assets/haribo-logo.png)
-<img src="../assets/haribo-logo.png" width="200">
+<img src="../assets/haribo-logo.png" width="500">
