@@ -1,5 +1,5 @@
-# Semaine Intensive d'Intégration :candy: :lollipop: | hetic-w1p2021-10-neon
-*CHALAL FARAU FENNANE KICHENAMOURTY STEPHAN*
+# Semaine Intensive d'Intégration | hetic-w1p2021-10-neon
+*CHALAL FARAU FENNANE KICHENAMOURTY STEPHAN :candy: :lollipop:* 
 
 [Lien GitHub](https://github.com/Benjigo93/hetic-w1p2021-10-neon)
 
