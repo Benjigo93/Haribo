@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "varGrounded";
+  src: url("fonts/VAGRoundedStd-Thin.woff2") format("woff2"),
+    url("fonts/VAGRoundedStd-Thin.otf") format("opentype");
+}
+
+body {
+  font-family: varGrounded;
+}
