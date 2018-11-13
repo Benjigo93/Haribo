@@ -5,7 +5,7 @@
 
 ***
 <div align="center">
-<img margin-left="5" src="../assets/haribo-logo.png" width="200" height="50"> <img src="../assets/hetic-logo.png" width="200">
+<img margin-right="5" src="../assets/haribo-logo.png" width="200" height="50"> <img src="../assets/hetic-logo.png" width="200">
 </div>
 
 ***
