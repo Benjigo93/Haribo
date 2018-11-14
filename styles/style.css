@@ -177,7 +177,17 @@ figure{
 }
 
 .article__next {
-  float: right;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.fa-arrow-right {
+  margin-left: 2px;
+}
+
+.fa-arrow-left {
+  margin-right: 2px;
 }
 
 @media (min-width: 500px) {
@@ -198,7 +208,7 @@ figure{
     grid-gap: 5px;
   }
    .article__headline {
-    font-size: 40px;
+    font-size: 30px;
    }
 
    .article__text {
@@ -230,6 +240,9 @@ figure{
    .article__text {
      font-size: 28px;
   }
+   .article__headline {
+    font-size: 40px;
+   }
 }
 
 .section--article,.section--products{
