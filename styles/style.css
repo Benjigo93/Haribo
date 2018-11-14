@@ -58,12 +58,16 @@ a{
   flex-wrap: wrap;
   align-items: flex-start;
   z-index: 20;
-  background-color: #F7C563;
   padding: 2vh;
 }
 
 .header__logo{
   width: 40%;
+}
+@media screen and (min-width: 720px) {
+  .header__logo{
+    max-width: 200px;
+  }
 }
 
 .header__nav{
@@ -193,6 +197,7 @@ a{
   margin-top: 5px;
   max-width: 300px;
 }
+
 
 .social__icons{
   display: flex;
@@ -376,6 +381,10 @@ a{
   margin-bottom: 15px;
 }
 
+.section--overview--products{
+  background-color: #fff;
+}
+
 @media screen and (min-width: 720px) {
   .intro__content__illustations-box{
     width: 30%;
@@ -396,9 +405,6 @@ a{
   .overview--articles__box__image{
     width: 50%;
     margin-right: 20px;
-  }
-  .overview--articles__box__text-box{
-    padding-top: 20px;
   }
 }
 
