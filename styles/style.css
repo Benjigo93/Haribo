@@ -35,7 +35,10 @@ a{
 }
 
 
-/* HEADER */
+
+
+/********************* HEADER *********************/
+
 
 .container{
   display: block;
@@ -168,7 +171,9 @@ a{
 
 
 
-/* FOOTER */
+
+/********************* FOOTER *********************/
+
 
 .footer__logo{
   width: 200px;
@@ -216,9 +221,12 @@ a{
   background-position: 0px;
 }
 
-/* HOMEPAGE */
 
-/* Bear headline */
+
+/********************* HOMEPAGE *********************/
+
+
+/* BEAR HEADLINE */
 
 h2{
   font-size: 20px;
