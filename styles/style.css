@@ -526,10 +526,14 @@ figure {
   font-size: 14px;
   margin-bottom: 15px;
 }
+
+
+
 .article__image {
   border: 0.4px solid #000000;
   box-sizing: border-box;
   border-radius: 15px;
+  text-align: center;
 }
 
 .article__next {
@@ -546,6 +550,18 @@ figure {
   margin-right: 2px;
 }
 
+.under__title__text {
+  font-size: 16px;
+  text-decoration: underline;
+  font-style: italic;
+}
+.article__image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 @media (min-width: 500px) {
   .article__line__return {
     display: none;
@@ -553,15 +569,18 @@ figure {
 }
 
 @media (min-width: 720px) {
-  article .content___article1__text1 {
+  article .content___article__text1 {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
     grid-template-areas:
       "image-odd text-odd"
-      "text-even image-even";
+      "text-even image-even"
+      "image-3 text-3";
+
     grid-gap: 5px;
   }
+
   .article__headline {
     font-size: 30px;
   }
@@ -569,24 +588,43 @@ figure {
   .article__text {
     font-size: 20px;
   }
-  .content__image:nth-of-type(odd) {
+
+  .content__image:nth-of-type(1) {
     grid-area: image-odd;
   }
 
-  .article__text:nth-of-type(odd) {
+  .article__text:nth-of-type(1) {
     grid-area: text-odd;
     padding-left: 40px;
   }
 
-  .content__image:nth-of-type(even) {
+  .content__image:nth-of-type(2) {
     grid-area: image-even;
     margin-top: 45px;
   }
 
-  .article__text:nth-of-type(even) {
+  .article__text:nth-of-type(2) {
     grid-area: text-even;
     padding-right: 40px;
     margin-top: 45px;
+  }
+
+  .content__image:nth-of-type(3) {
+    grid-area: image-3;
+    margin-top: 45px;
+  }
+
+  .article__text:nth-of-type(3) {
+    grid-area: text-3;
+    padding-left: 40px;
+  }
+
+  .article__text:last-child {
+    margin-top: 45px;
+  }
+
+  .under__title__text {
+    font-size: 22px;
   }
 }
 
@@ -595,6 +633,20 @@ figure {
     font-size: 28px;
   }
   .article__headline {
-    font-size: 40px;
+    font-size: 35px;
   }
+
+  .under__title__text {
+    font-size: 30px;
+  }
+
+}
+
+
+/********************* ARTICLE 2 *********************/
+
+.icone__of__description {
+  width: 40px;
+  height: 40px;
+  padding-left: 5px;
 }
