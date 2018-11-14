@@ -65,39 +65,75 @@
           </div>
         </nav>
       </header>
-
-      <footer class="footer">
-        <img
-          class="footer__logo"
-          alt="Le Logo de Haribo"
-          src="images/haribo-logo.png"
-        />
-        <div class="footer__social">
-          <div class="social__icons">
-            <span>Suivez-nous</span>
-            <a
-              href="#"
-              title="facebook"
-              class="social__icons__icon ocial__icons__icon--facebook"
-              ><span>Facebook</span></a
-            >
-            <a
-              href="#"
-              title="instagram"
-              class="social__icons__icon social__icons__icon--instagram"
-              ><span>Instagram</span></a
-            >
-            <a
-              href="#"
-              title="twitter"
-              class="social__icons__icon social__icons__icon--twitter"
-              ><span>Twitter</span></a
-            >
-          </div>
+      <div class="intro__content">
+        <div class="intro__content__illustations-box">
+            <img class="intro__content__illustations intro__content__illustations--reglisse" alt="Illustration du ..." src="images/SVG/escargot.svg">
+          <img class="intro__content__illustations intro__content__illustations--ourson" alt="Illustration du ourson" src="images/SVG/bear.svg">
+          <img class="intro__content__illustations intro__content__illustations--marshmallow" alt="Illustration du ..." src="images/SVG/marshmallows.svg">
+          
         </div>
-        <span class="footer__copyright">Copyright © 2018</span>
-      </footer>
-    </div>
-    <script src="scripts/app.js"></script>
-  </body>
+        <p class="intro__text">Haribo c’est beau la vie, pour les grands et les petits</p>
+      </div>
+    </section>
+
+    <section class="section--products">
+      <h2 class="h2__bear--right">Les produits</h2>
+      <div class="overview--products">
+        <div class="overview--products__box overview--products__box--ourson">
+          <h3>L’ourson</h3>
+          <img class="overview--products__box__image" src="images/SVG/group--bears.svg">
+        </div>
+        <div class="overview--products__box overview--products__box--marshmallow">
+          <h3>Le marshmallow</h3>
+          <img class="overview--products__box__image" src="images/SVG/groupe--marshmallows.svg">
+        </div>
+        <div class="overview--products__box overview--products__box--reglisse">
+          <h3>La réglisse</h3>
+          <img class="overview--products__box__image" src="images/SVG/escargot.svg">
+        </div>
+      </div>
+    </section>
+
+    <section class="section--article">
+      <h2 class="h2__bear--left">Le Histoiere</h2>
+      <div class="overview--articles">
+        <article class="overview--articles__box overview--articles__box--main-history">
+          <img class="overview--articles__box__image" src="images/history--main.jpg">
+          <div class="overview--articles__box__text-box">
+            <h3 class="overview--articles__box__text-box__headline">Découvrez notre histoire</h3>
+            <p class="overview--articles__box__text-box__text">À la sortie de l'école, Hans Riegel, né à Friesdorf près de Bonn en 1893, fait un apprentissage de confiseur et travaille plus de 5 ans chez Kleutgen & Meier.</p>
+            <a class="overview--articles__box__text-box__link" href="#">Voir plus</a>
+          </div>
+        </article>
+
+        <article class="overview--articles__box overview--articles__box--bonbon">
+            <img class="overview--articles__box__image" src="images/history--bonbons.jpg">
+            <div class="overview--articles__box__text-box">
+              <h3 class="overview--articles__box__text-box__headline">Juste une histoire de bonbon</h3>
+              <p class="overview--articles__box__text-box__text">Découvrez le histoire des votres bonbons prefere.</p>
+              <a class="overview--articles__box__text-box__link" href="#">Voir plus</a>
+            </div>
+          </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <span class="footer__copyrigth">Copyright © 2018</span><br>
+        <img class="footer__logo" alt="Le Logo de Haribo" src="images/haribo-logo.png" />
+      </div>
+      <div class="footer__social">
+        <div class="social__box">
+            <span class="social__box__text">Suivez-nous</span>
+          <div class="social__icons">
+          <a href="#" title="facebook" class="social__icons__icon social__icons__icon--facebook"><span>Facebook</span></a>
+          <a href="#" title="instagram" class="social__icons__icon social__icons__icon--instagram"><span>Instagram</span></a>
+          <a href="#" title="twitter" class="social__icons__icon social__icons__icon--twitter"><span>Twitter</span></a>
+        </div>
+      </div>
+      <!---->
+    </footer>
+  </div> 
+  <script src="scripts/app.js" ></script>
+</body>
 </html>
