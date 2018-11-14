@@ -11,10 +11,21 @@ body {
 .header{
   position: fixed;
   display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  z-index: 20;
+  padding: 2vh;
 }
 
 .header__logo{
   width: 40%;
+}
+@media screen and (min-width: 720px) {
+  .header__logo{
+    max-width: 200px;
+  }
 }
 
 .header__nav__icon{
@@ -52,10 +63,63 @@ body {
   bottom: -10px;
 }
 
+.header__nav.is-open .header__nav__icon__element::after{
+  opacity: 0;
+}
+
+.header__nav.is-open .header__nav__icon__element{
+  transform-origin: center bottom;
+  transform: rotate(-45deg);
+  margin-left: 3px;
+}
+
+.header__nav.is-open .header__nav__icon__element::before{
+  transform-origin: center bottom;
+  transform: rotate(90deg);
+  margin-top: 8px;
+  margin-left: -2px;
+}
+
+/********************* FOOTER *********************/
+
+.footer{
+  background-color: #ffcc55;
+}
+
+.footer__content{
+  border-top: solid black 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  padding-right: 65px;
+  font-size: 0.8em;
+}
+
+.footer__logo{
+  width:40%;
+  margin-top: 5px;
+  max-width: 300px;
+}
+
+.social__icons{
+  display: flex;
+  margin-top: 5px;
+}
+.social__icons__icon{
+  width: 30px;
+  height: 30px;
+  display: block;
+  overflow: hidden;
+  margin-right: 5px;
+  text-indent: -1000px;
+  background-image: url(../images/SVG/sprite--social.svg);
+  background-repeat: no-repeat;
+  background-size: 90px;
+
 .footer__logo{
   width: 200px;
 }
-
 
 img{
   max-width: 100%;
@@ -63,24 +127,29 @@ img{
 
 a{
   text-decoration: none;
-  color:#000;
+  color:#0
 }
 
 p{
   line-height: 
 }
 
-figure{
-  margin-bottom: 15px;
+.social__icons__icon--twitter{
+  background-position: 0px;
 }
 
+/********************* ALL PAGES *********************/
+
 /* Bear headline */
+
 
 .headline--bear{
   font-size: 20px;
   position: relative;
   width: 100%;
   text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
   margin-bottom: 40px;
 }
 
@@ -113,17 +182,64 @@ figure{
   left: 20px;
 }
 
-/* Homepage */
+/* ALL */
+
+.wrap--main{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section--article,
+.section--products,
+.section--overview--article,
+.section--overview--products{
+  padding: 60px 10px 40px 10px;
+}
+
+.overview--products__box,
+.overview--articles__box, 
+.articles__box,
+.product__box{
+  border: solid black 5px;
+  background-color: #fff;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.section--article,
+.section--products--full{
+  background-color: #ffcc55;
+  overflow-x: hidden;
+  min-height: 80vh;
+}
+
+@media screen and (min-width: 720px) {
+  .section--article,
+  .section--products,
+  .section--overview--article,
+  .section--overview--products
+  {
+    padding: 100px 10px 100px 10px;
+  }
+}
+
+
+
+
+
+/********************* HOMEPAGE *********************/
+
 .intro{
   height: 100vh;
   width: 100vw;
-  background-color: #F7C563;
+  background-color: #ffcc55;
   position: relative;
 }
 
 .intro__text{
   position: absolute;
   bottom: 10%;
+  font-size: 1.5em;
 }
 
 .intro__content__illustations-box{
@@ -158,7 +274,168 @@ figure{
   margin-left: 10%;;
 }
 
-/* Article 1 */
+.overview--products__box:last-child,
+.overview--articles__box:last-child{
+  margin-bottom: 0px;
+
+.overview--products__box,
+.section--overview--article{
+  background-color: #ffcc55;
+}
+
+.overview--products__box__image{
+  width: 70%;
+  margin-left: 30%;
+}
+
+.overview--articles__box__text-box__headline,
+.overview--articles__box__text-box__text{
+  margin-bottom: 15px;
+ }  
+
+.section--overview--products{
+  background-color: #fff;
+}
+
+@media screen and (min-width: 720px) {
+  .intro__content__illustations-box{
+    width: 30%;
+  }
+  .overview--products{
+    display: flex;
+    justify-content: space-between;
+  }
+  .overview--products__box{
+    width: 28%;
+    max-height: 200px;
+  }
+  .overview--articles__box{
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .overview--articles__box__image{
+    width: 50%;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .overview--articles{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .overview--articles__box{
+    width: 45%;
+  }
+}
+
+
+@media screen and (max-width: 719px) {
+  .overview--articles__box{
+    padding: 0px;
+  }
+  .overview--articles__box__text-box{
+    margin: 25px 15px 30px 15px;
+  }
+}
+
+
+/********************* PRODUITS *********************/
+  
+/* All products */
+
+.product__image{
+  width: 70%;
+}
+
+.product__image--box{
+  position: relative;
+}
+.product__box--absolute{
+  position: absolute;
+  left: 114%;
+  top: 0;
+  transition: all .5s;
+}
+
+.product__box--absolute.is-opend{
+  left: 0%;
+}
+.product__image.is-opend{
+  opacity: 0;
+}
+
+.product__box--ingredient{
+  position: relative;
+  background-color: #fdebf5;
+  padding: 25px;
+  padding-left: 45px;
+  z-index: 1;
+}
+
+.product__text--ingredient::before{
+  position: absolute;
+  content: "";
+  display: block;
+  background-position: center;
+  width: 128px;
+  background-size: 200%;
+  height: 137px;
+  background-image: url(../images/chamallow.png);
+  left: -100px;
+  top:0;
+  z-index: 0;
+}
+
+.product__text--anecdote::before{
+  content: "";
+  display: block;
+  background-image: url(../images/SVG/icon--funfact.svg);
+  height: 60px;
+  width: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 10px;;
+}
+
+.product__text--ingredient::after{
+  position: absolute;
+  content: "";
+  display: block;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-image: url(../images/SVG/icon--ingredients.svg);
+  top: 90px;
+  left: -70px;
+  z-index: 0;
+} 
+  
+  
+/* Produit  1 - Marshmallows */
+
+#product--1 .product__text--ingredient::before{
+  width: 128px;
+  background-size: 200%;
+  height: 137px;
+  background-image: url(../images/chamallow.png);
+}
+
+/* Produit  2 -  */
+
+
+  
+  
+/********************* ARTICLE 1 *********************/
+
+figure{
+  margin-bottom: 15px;
+}  
+  
 .article__image__description {
   text-align: center;
   font-style: italic;
@@ -244,101 +521,4 @@ figure{
     font-size: 40px;
    }
 }
-
-.section--article,.section--products{
-  padding: 60px 10px 40px 10px;
-}
-
-.overview--products__box,.overview--articles__box, .articles__box{
-  border: solid black 5px;
-  background-color: #fff;
-  margin-bottom: 15px;
-  padding: 15px;
-}
-
-.overview--products__box:last-child,.overview--articles__box:last-child{
-  margin-bottom: 0px;;
-}
-
-.overview--products__box__image{
-  width: 70%;
-  margin-left: 30%;
-}
-
-.overview--products__box{
-  background-color: #F7C563;
-}
-
-.section--article{
-  background-color: #F7C563;
-}
-
-.overview--articles__box{
-  padding: 0px;
-}
-
-.overview--articles__box__text-box{
-  margin: 25px 15px 30px 15px;
-
-}
-.overview--articles__box__text-box__headline,
-.overview--articles__box__text-box__text{
-  margin-bottom: 15px;
-}
-
-
-/* footer */
-.footer{
-  background-color: #F7C563;
-  border-top: solid black 3px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 10px;
-  padding-right: 65px;
-  font-size: 0.8em;
-}
-
-.footer__logo{
-  width:40%;
-  margin-top: 5px;
-}
-
-.social__icons{
-  display: flex;
-  margin-top: 5px;
-}
-.social__icons__icon{
-  width: 30px;
-  height: 30px;
-  display: block;
-  overflow: hidden;
-  margin-right: 5px;
-  text-indent: -1000px;
-  background-image: url(../images/SVG/sprite--social.svg);
-  background-repeat: no-repeat;
-  background-size: 90px;
-}
-
-.social__icons__icon--facebook{
-  background-position: -60px;
-}
-.social__icons__icon--instagram{
-  background-position: -30px;
-}
-.social__icons__icon--twitter{
-  background-position: 0px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
