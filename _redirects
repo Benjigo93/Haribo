@@ -1,5 +1,5 @@
 /index.html             /
-/pages/*                /:splat
+/pages/*                https://haribo.netlify.com/:splat 200
 /produits               /index.html#homepage--products  
 /histoire               /index.html#homepage--articles  
 /histoire-de-haribo     /pages/article1.html             
