@@ -45,7 +45,6 @@ a{
 }
 
 .header h1{
-  display: none;
   text-indent: -12000px;
 }
 
@@ -169,63 +168,12 @@ a{
   margin-left: -2px;
 }
 
-@media screen and (max-width: 719px){
-  .footer__content{
-    padding: 20px 80px 20px 10px;
-  }
-}
-
 @media screen and (min-width: 720px) {
-  .header{
-    width: 100vw;
-    padding: 2.5vw 4vw 1.5vw 4vw;
-    justify-content: unset;
-  }
-  
   .header__logo {
-    width: 15%;
+    max-width: 200px;
   }
-
-  .header__nav{
-    top: 0;
-    left: 0;
-    height: 100px;
-    width: 100vw;
-    background-color: transparent;
-  }
-
-  .header__nav__content{
-    flex-direction: row;
-    height: auto;
-    justify-content: flex-end;
-    width: auto;
-    align-items: center;
-  }
-
-  .header__nav__content li{ 
-    padding: 2.5vw 4vw;
-    font-size: 1.4em;
-  }
-
-  .header__nav__content li:last-of-type{ 
-    margin-right: 4vw
-  }
-
-  .header__nav__icon{
-    display: none;
-  }
-
-  .footer__content{
-    padding: 20px;
-  }
-
 }
 
-@media screen and (min-width: 1366px) {
-  .header__logo {
-    width: 10%;
-  }
-}
 
 /********************* FOOTER *********************/
 
@@ -238,6 +186,7 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding: 20px 80px 20px 10px;
   font-size: 0.8em;
 }
 
@@ -345,7 +294,6 @@ a{
 .section--products--full {
   background-color: #ffcc55;
   overflow-x: hidden;
-  min-height: 80vh;
 }
 
 .site--article .header, .site--produit .header{
@@ -467,7 +415,7 @@ a{
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 719px) {
   .overview--articles__box {
     padding: 0px;
   }
@@ -551,15 +499,142 @@ a{
 
 /* Produit  1 - Marshmallows */
 
+
 #product--1 .product__text--ingredient::before {
   width: 128px;
   background-size: 200%;
   height: 137px;
   background-image: url(../images/chamallow.png);
 }
+@keyframes blink {
+  from {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1.5);
+    opacity:1;
+  }
+}
+#product--1 .product__text--anecdote::before {
+  animation: blink 1s 1 forwards;
+}
 
-/* Produit  2 -  */
+@media screen and (max-width: 719px) {
+  .section--article, .section--products--full {
+    min-height: 80vh;
+  }
+}
 
+@media (min-width:720px) {
+  #product--1 .product__box--absolute {
+    position: initial;
+  }
+  #product--1 .product__text--ingredient::before,
+  #product--1 .product__text--ingredient::after {
+   display: none;
+  }
+  #product--1 .product__box{
+    position: relative;
+  }
+  #product--1 .product__text--anecdote{
+    position: absolute;
+    width: 55%;
+    top: 20%;
+    right: 35px;
+  }
+  #product--1 .product__image {
+    width:38%;
+  }
+ 
+  #product--1 .product__box--ingredient {
+    margin-top: -7px;
+    bottom: 2px;
+  }
+ #product--1 .header__nav {
+   display: none;
+ } 
+}
+@media (min-width:1366px){
+  }
+#product--1 .product__box--ingredient {
+    bottom: 17px;
+}
+
+
+
+/* Produit  2 - Réglisses */
+
+.product__image.product__image--2 {
+  width:100%;
+  margin-left:-45px;
+}
+.product__text--ingredient::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-position: center;
+  width: 128px;
+  background-size: 147px;
+  background-repeat: no-repeat;
+  height: 137px;
+  background-image: url(../images/reglisse.png);
+  left: -100px;
+  top: 0;
+  z-index: 0;
+}
+@keyframes blink {
+  from {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1.5);
+    opacity:1;
+  }
+}
+#product--2 .product__text--anecdote::before {
+  animation: blink 1s 1; 
+}
+
+@media (min-width:720px) {
+  #product--2 .product__box--absolute {
+    position: initial;
+  }
+  #product--2 .product__text--ingredient::before,
+  #product--2 .product__text--ingredient::after {
+   display: none;
+  }
+  #product--2 .product__box{
+    position: relative;
+  }
+  #product--2 .product__text--anecdote{
+    position: absolute;
+    width: 55%;
+    top: 20%;
+    right: 35px;
+  }
+
+  #product--2 .product__image.product__image--2 {
+    width:55%;
+    margin-left: -58px;
+  }
+ 
+  #product--2 .product__box--ingredient {
+    margin-top: 20px;
+  }
+  #product--2 .header__nav {
+    display:none;
+  }
+}
+
+@media (min-width:1366px) {
+  #product--2 .product__text--anecdote{
+  width: 40%;
+  top: 20%;
+  right: 95px;
+  }
+}
 /********************* ARTICLE 1 *********************/
 
 figure {
@@ -604,7 +679,7 @@ figure {
 }
 
 @media (min-width: 720px) {
-  article .content___article__text1 {
+  article .content___article1__text1 {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
