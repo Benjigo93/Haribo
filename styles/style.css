@@ -61,6 +61,7 @@ p{
 }
 
 .header h1{
+  display: none;
   text-indent: -12000px;
 }
 
@@ -184,12 +185,60 @@ p{
   margin-left: -2px;
 }
 
-@media screen and (min-width: 720px) {
-  .header__logo {
-    max-width: 200px;
+@media screen and (max-width: 719px) {
+  .footer__content {
+    padding: 20px 80px 20px 10px;
   }
-  .footer__logo-box{
-    margin-left: 25px;
+}
+
+@media screen and (min-width: 720px) {
+  .header {
+    width: 100vw;
+    padding: 2.5vw 4vw 1.5vw 4vw;
+    justify-content: unset;
+  }
+
+  .header__logo {
+    width: 15%;
+  }
+
+  .header__nav {
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100vw;
+    background-color: transparent;
+  }
+
+  .header__nav__content {
+    flex-direction: row;
+    height: auto;
+    justify-content: flex-end;
+    width: auto;
+    align-items: center;
+  }
+
+  .header__nav__content li {
+    padding: 2.5vw 4vw;
+    font-size: 1.4em;
+  }
+
+  .header__nav__content li:last-of-type {
+    margin-right: 4vw;
+  }
+
+  .header__nav__icon {
+    display: none;
+  }
+
+  .footer__content {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .header__logo {
+    width: 10%;
   }
 }
 
@@ -548,10 +597,10 @@ p{
   transition: all 0.3s;
 }
 
-.product__box--absolute.is-opend {
+.product__box--absolute.is-open {
   left: 0%;
 }
-.product__image.is-opend {
+.product__image.is-open {
   opacity: 0;
 }
 
@@ -611,8 +660,238 @@ p{
   height: 137px;
   background-image: url(../images/chamallow.png);
 }
+@keyframes blink {
+  from {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+#product--1 .product__text--anecdote::before {
+  animation: blink 1s 1 forwards;
+}
 
-/* Produit  2 -  */
+@media screen and (max-width: 719px) {
+  .section--article,
+  .section--products--full {
+    min-height: 80vh;
+  }
+}
+
+@media (min-width: 720px) {
+  #product--1 .product__box--absolute {
+    position: initial;
+  }
+  #product--1 .product__text--ingredient::before,
+  #product--1 .product__text--ingredient::after {
+    display: none;
+  }
+  #product--1 .product__box {
+    position: relative;
+  }
+  #product--1 .product__text--anecdote {
+    position: absolute;
+    width: 55%;
+    top: 20%;
+    right: 35px;
+  }
+  #product--1 .product__image {
+    width: 38%;
+  }
+
+  #product--1 .product__box--ingredient {
+    margin-top: -7px;
+    bottom: 2px;
+  }
+  #product--1 .header__nav {
+    display: none;
+  }
+}
+@media (min-width: 1366px) {
+}
+#product--1 .product__box--ingredient {
+  bottom: 17px;
+}
+
+/* Produit  2 - Réglisses */
+
+.product__image.product__image--2 {
+  width: 100%;
+  margin-left: -45px;
+}
+.product__text--ingredient::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-position: center;
+  width: 128px;
+  background-size: 147px;
+  background-repeat: no-repeat;
+  height: 137px;
+  background-image: url(../images/reglisse.png);
+  left: -100px;
+  top: 0;
+  z-index: 0;
+}
+@keyframes blink {
+  from {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+#product--2 .product__text--anecdote::before {
+  animation: blink 1s 1;
+}
+
+@media (min-width: 720px) {
+  #product--2 .product__box--absolute {
+    position: initial;
+  }
+  #product--2 .product__text--ingredient::before,
+  #product--2 .product__text--ingredient::after {
+    display: none;
+  }
+  #product--2 .product__box {
+    position: relative;
+  }
+  #product--2 .product__text--anecdote {
+    position: absolute;
+    width: 55%;
+    top: 20%;
+    right: 35px;
+  }
+
+  #product--2 .product__image.product__image--2 {
+    width: 55%;
+    margin-left: -58px;
+  }
+
+  #product--2 .product__box--ingredient {
+    margin-top: 20px;
+  }
+  #product--2 .header__nav {
+    display: none;
+  }
+}
+
+@media (min-width: 1366px) {
+  #product--2 .product__text--anecdote {
+    width: 40%;
+    top: 20%;
+    right: 95px;
+  }
+}
+
+
+/* Produit  3 - Oursons  */
+
+#product--3 .product__text--ingredient::before {
+  width: 128px;
+  background-size: 125%;
+  height: 137px;
+  background-image: url(../images/oursons.png);`
+
+}
+
+@keyframes blink {
+  from {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+
+  to {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
+.product__text--anecdote::before {
+  animation: blink 1s 1 forwards;
+}
+@keyframes blink {
+  from {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 719px) {
+ .section--article, .section--products--full {
+  min-height: 80vh;
+  }
+}
+
+
+@media screen and (min-width: 720px) {
+
+  #product--3 .product__image {
+    width: 30%;
+    margin-left: 22px;
+  }
+  #product--3 .product__text--ingredient::after, 
+  #product--3 .product__text--ingredient::before  {
+    display: none;
+  }
+
+  #product--3 .product__box--absolute {
+    position: initial;
+  }
+
+  #product--3 .product__box {
+    position: relative;
+  }
+
+  #product--3 .product__text--anecdote {
+    position: absolute;
+    top: 17%;
+    width: 55%;
+    right: 50px;
+
+  }
+
+  #product--3 .product__box--ingredient {
+    margin-top: 20px;
+  }
+
+  #product--3 .section--products {
+    padding: 120px 10px 100px 10px;
+  }
+
+  #product--3 .header__nav {
+    display: none;
+  }
+  
+}
+
+@media screen and (min-width: 1366px) {
+  #product--3 .product__text--anecdote {
+    width: 40%;
+    top: 20%;
+    right: 95px;
+  }
+
+  #product--3 .product__image {
+    margin-left: 40px;
+  }
+
+  #product--3 .section--products {
+    padding: 190px 10px 100px 10px;
+  }
+}
+
+
 
 /********************* ARTICLE 1 *********************/
 
@@ -702,4 +981,54 @@ figure {
   .article__headline {
     font-size: 40px;
   }
+  .under__title__text {
+    font-size: 30px;
+  }
+
 }
+
+
+/********************* ARTICLE 2 *********************/
+
+.icon__of__description {
+  width: 20px;
+  height: 20px;
+  padding-left: 5px;
+}
+
+@keyframes arrow-to-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0)
+  }
+}
+
+.arrow__to__left:hover {
+  animation: arrow-to-left 2s;
+}
+
+@keyframes arrow-to-right {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0)
+  }
+}
+
+.arrow__to__right:hover {
+  animation: arrow-to-right 2s;
+}
+
