@@ -1,10 +1,10 @@
 /index.html             /
 /produits               /index.html#homepage--products  
 /histoire               /index.html#homepage--articles  
-/histoire-de-haribo     /pages/article1.html 200            
+/histoire-de-haribo     /pages/article1.html             
 /histoire-de-bonbons    /pages/article3.html           
 /marshmallow            /pages/produit1.html            
 /reglisse               /pages/produit2.html            
 /ourson                 /pages/produit3.html     
-
+/pages/*                /:splat
 
