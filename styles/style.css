@@ -784,6 +784,14 @@ p {
     align-items: center;
   }
 
+  .header__nav__content__link{
+    transition: color 0.2s ease;
+  }
+
+  .header__nav__content__link:hover{
+    color: #B23F3F;
+  }
+
   .header__nav__content li {
     padding: 2.5vw 4vw;
     font-size: 1.4em;
