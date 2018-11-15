@@ -35,6 +35,22 @@ a {
   color: #000;
 }
 
+p{
+  line-height:1.4em;
+}
+
+.link--see-more{
+  margin-right: 5px;
+}
+
+@keyframes bounce--bear{
+  from {bottom: -14px;}
+  50%  {bottom: 0px;}
+  to   {bottom: -14px;}
+}
+
+
+
 /********************* HEADER *********************/
 
 .container {
@@ -221,6 +237,7 @@ a {
   }
 }
 
+
 @media screen and (min-width: 1366px) {
   .header__logo {
     width: 10%;
@@ -261,6 +278,12 @@ a {
   background-image: url(../images/SVG/sprite--social.svg);
   background-repeat: no-repeat;
   background-size: 90px;
+  transition: all .2s;
+}
+
+.social__icons__icon:hover {
+  background-color: #fff;
+  border-radius: 5px;
 }
 
 .social__icons__icon--facebook {
@@ -282,7 +305,7 @@ a {
   position: relative;
   width: 100%;
   text-align: center;
-  max-width: 600px;
+  max-width: 400px;
   margin: 0 auto;
   margin-bottom: 40px;
 }
@@ -316,6 +339,11 @@ a {
   left: 10px;
 }
 
+.headline--bear--right:hover::after,
+.headline--bear--left:hover::after{
+  animation: bounce--bear 0.4s ease;
+}
+
 /* ALL */
 
 .wrap--main {
@@ -338,6 +366,7 @@ a {
   background-color: #fff;
   margin-bottom: 15px;
   padding: 15px;
+  display: block;
 }
 
 .section--article,
@@ -356,7 +385,11 @@ a {
   .section--products,
   .section--overview--article,
   .section--overview--products {
-    padding: 100px 10px 100px 10px;
+    padding: 100px 30px 100px 30px;
+  }
+
+  .headline--bear {
+    font-size: 2em;
   }
 }
 
@@ -393,19 +426,34 @@ a {
   position: absolute;
   width: 40%;
   bottom: 0;
+  opacity: 0;
 }
 
 .intro__content__illustations--ourson {
   left: 0;
+  animation: bounce--intro 1s linear forwards;
+}
+@keyframes bounce--intro{
+  from {opacity:0;bottom: 1000px;}
+  25% {opacity:1;}
+  50%  {bottom: 0px;}
+  65%   {bottom: 40px;}
+  80%   {bottom: 0px;}
+  90%   {bottom: 20px;}
+  100%   {bottom: 0px; opacity: 1;}
 }
 .intro__content__illustations--reglisse {
   width: 80%;
   bottom: 15px;
   left: 10%;
+  opacity: 0;
+  animation: bounce--intro 1s linear 0.3s forwards;
 }
 .intro__content__illustations--marshmallow {
   right: 0;
   width: 50%;
+  opacity: 0;
+  animation: bounce--intro 1s linear 0.6s forwards;
 }
 
 .overview--products__box:last-child,
@@ -421,11 +469,30 @@ a {
 .overview--products__box__image {
   width: 70%;
   margin-left: 30%;
+  transform: scale(1);
+  transition: transform .2s;
+}
+
+.overview--products__box:hover .overview--products__box__image{
+  transform: scale(1.05);
 }
 
 .overview--articles__box__text-box__headline,
 .overview--articles__box__text-box__text {
   margin-bottom: 15px;
+}
+
+.overview--articles__box__text-box {
+  margin: 25px 15px 30px 15px;
+}
+
+.overview--articles__box__text-box__link{
+  transition: all 0.3s;
+  margin-left: 0px;
+}
+
+.overview--articles__box__text-box__link:hover{
+  margin-left: 10px;
 }
 
 .section--overview--products {
@@ -434,16 +501,32 @@ a {
 
 @media screen and (min-width: 720px) {
   .intro__content__illustations-box {
-    width: 30%;
+    width: 50%;
   }
+  .intro__text {
+    font-size: 2.5em;
+    bottom: -110px;
+  }
+
   .overview--products {
     display: flex;
     justify-content: space-between;
   }
   .overview--products__box {
-    width: 28%;
-    max-height: 200px;
+    width: 26%;
+    height: 200px;
   }
+
+  .overview--products__box__image {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+  }
+
+  .overview--products__box__headline{
+    text-align: center;
+  }
+
   .overview--articles__box {
     display: flex;
     align-items: flex-start;
@@ -453,27 +536,46 @@ a {
     width: 50%;
     margin-right: 20px;
   }
+
+  .overview--articles__box__text-box__headline{
+    font-size: 1.3em;
+    margin-top: 30px;
+  }
+
+  .overview--products__box:last-child,
+  .overview--articles__box:last-child {
+    margin-bottom: auto;
+  }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1366px) {
+  .intro__content__illustations-box {
+    width: 25%;
+  }
+  .intro__text {
+    bottom: -130px;
+    max-width: 50%;
+    margin-left: 25%;
+  }
+  .overview--products__box__image--ourson{
+    margin-top: 44px;
+  }
+
   .overview--articles {
     display: flex;
     justify-content: space-between;
   }
-
   .overview--articles__box {
     width: 45%;
   }
+  .overview--products__box__headline{
+    font-size: 1.4em;
+  }
+  .overview--articles__box__image{
+    min-width: 225px;
+  }
 }
 
-@media screen and (max-width: 719px) {
-  .overview--articles__box {
-    padding: 0px;
-  }
-  .overview--articles__box__text-box {
-    margin: 25px 15px 30px 15px;
-  }
-}
 
 /********************* PRODUCTS *********************/
 
@@ -927,3 +1029,4 @@ figure {
 .arrow__to__right:hover {
   animation: arrow-to-right 2s;
 }
+
