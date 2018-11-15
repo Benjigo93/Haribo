@@ -1,6 +1,8 @@
 # Semaine Intensive d'Intégration | Équipe 10 - Néon
 __*:lollipop: :candy:  CHALAL FARAU FENNANE KICHENAMOURTY STEPHAN :candy: :lollipop:*__
 
+&nbsp;
+
 Ce site web parle de la célèbre entreprise HARIBO , leader du marché mondial des gélifiés aux fruits et des bonbons à la réglisse !
 
 Ce site Web n'a pas de but marketing mais de présenter la marque HARIBO et de raconter ses origines (origines des premiers bonbons emblématique ect...).
