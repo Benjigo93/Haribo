@@ -238,6 +238,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding: 20px 80px 20px 10px;
   font-size: 0.8em;
 }
 
@@ -344,7 +345,6 @@ a {
 .section--products--full {
   background-color: #ffcc55;
   overflow-x: hidden;
-  min-height: 80vh;
 }
 
 .site--article .header,
@@ -467,7 +467,7 @@ a {
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 719px) {
   .overview--articles__box {
     padding: 0px;
   }
@@ -494,10 +494,10 @@ a {
   transition: all 0.3s;
 }
 
-.product__box--absolute.is-opend {
+.product__box--absolute.is-open {
   left: 0%;
 }
-.product__image.is-opend {
+.product__image.is-open {
   opacity: 0;
 }
 
@@ -686,7 +686,109 @@ a {
   }
 }
 
-/* Produit  2 -  */
+
+/* Produit  3 - Oursons  */
+
+#product--3 .product__text--ingredient::before {
+  width: 128px;
+  background-size: 125%;
+  height: 137px;
+  background-image: url(../images/oursons.png);`
+
+}
+
+@keyframes blink {
+  from {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+
+  to {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
+.product__text--anecdote::before {
+  animation: blink 1s 1 forwards;
+}
+@keyframes blink {
+  from {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 719px) {
+ .section--article, .section--products--full {
+  min-height: 80vh;
+  }
+}
+
+
+@media screen and (min-width: 720px) {
+
+  #product--3 .product__image {
+    width: 30%;
+    margin-left: 22px;
+  }
+  #product--3 .product__text--ingredient::after, 
+  #product--3 .product__text--ingredient::before  {
+    display: none;
+  }
+
+  #product--3 .product__box--absolute {
+    position: initial;
+  }
+
+  #product--3 .product__box {
+    position: relative;
+  }
+
+  #product--3 .product__text--anecdote {
+    position: absolute;
+    top: 17%;
+    width: 55%;
+    right: 50px;
+
+  }
+
+  #product--3 .product__box--ingredient {
+    margin-top: 20px;
+  }
+
+  #product--3 .section--products {
+    padding: 120px 10px 100px 10px;
+  }
+
+  #product--3 .header__nav {
+    display: none;
+  }
+  
+}
+
+@media screen and (min-width: 1366px) {
+  #product--3 .product__text--anecdote {
+    width: 40%;
+    top: 20%;
+    right: 95px;
+  }
+
+  #product--3 .product__image {
+    margin-left: 40px;
+  }
+
+  #product--3 .section--products {
+    padding: 190px 10px 100px 10px;
+  }
+}
+
+
 
 /********************* ARTICLE 1 *********************/
 
@@ -732,7 +834,7 @@ figure {
 }
 
 @media (min-width: 720px) {
-  article .content___article__text1 {
+  article .content___article1__text1 {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
