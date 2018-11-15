@@ -1,4 +1,12 @@
 /index.html             /
+/index.html#homepage--products  /produits  
+/index.html#homepage--articles  /histoire
+/pages/article1.html            /histoire-de-haribo     
+/pages/article3.html            /histoire-de-bonbons 
+/pages/produit1.html            /marshmallow     
+/pages/produit2.html            /reglisse    
+/pages/produit3.html            /ourson
+
 /produits               /index.html#homepage--products  
 /histoire               /index.html#homepage--articles  
 /histoire-de-haribo     /pages/article1.html            
@@ -7,10 +15,4 @@
 /reglisse               /pages/produit2.html            
 /ourson                 /pages/produit3.html     
 
-/index.html#homepage--products  /produits  
-/index.html#homepage--articles  /histoire
-/pages/article1.html            /histoire-de-haribo     
-/pages/article3.html            /histoire-de-bonbons 
-/pages/produit1.html            /marshmallow     
-/pages/produit2.html            /reglisse    
-/pages/produit3.html            /ourson 
+
