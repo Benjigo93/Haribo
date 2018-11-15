@@ -1,7 +1,7 @@
-/produits               /index.html#homepage--products
-/histoire               /index.html#homepage--articles
-/histoire-de-haribo     /pages/article1.html    200!
-/histoire-de-bonbons    /pages/article3.html    200!
-/marshmallow            /pages/produit1.html    200!
-/reglisse               /pages/produit2.html    200!
-/ourson                 /pages/produit3.html    200!
+/produits               /index.html#homepage--products  200!
+/histoire               /index.html#homepage--articles  200!
+/histoire-de-haribo     /pages/article1.html            200!
+/histoire-de-bonbons    /pages/article3.html            200!
+/marshmallow            /pages/produit1.html            200!
+/reglisse               /pages/produit2.html            200!
+/ourson                 /pages/produit3.html            200!
