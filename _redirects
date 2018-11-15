@@ -1,6 +1,6 @@
-/pages/article1.html  /histoire-de-haribo   301 
-/pages/article3.html  /histoire-de-bonbons  301
-/pages/produit1.html  /marshmallow          301
-/pages/produit2.html  /reglisse             301
-/pages/produit3.html  /ourson               301
+/histoire-de-haribo     /pages/article1.html    301 
+/histoire-de-bonbons    /pages/article3.html    301
+/marshmallow            /pages/produit1.html    301
+/reglisse               /pages/produit2.html    301
+/ourson                 /pages/produit3.html    301
 
