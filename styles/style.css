@@ -730,4 +730,54 @@ figure {
   .article__headline {
     font-size: 40px;
   }
+  .under__title__text {
+    font-size: 30px;
+  }
+
+}
+
+
+/********************* ARTICLE 2 *********************/
+
+.icon__of__description {
+  width: 20px;
+  height: 20px;
+  padding-left: 5px;
+}
+
+@keyframes arrow-to-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0)
+  }
+}
+
+.arrow__to__left:hover {
+  animation: arrow-to-left 2s;
+}
+
+@keyframes arrow-to-right {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0)
+  }
+}
+
+.arrow__to__right:hover {
+  animation: arrow-to-right 2s;
+}
 }
