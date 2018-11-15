@@ -456,8 +456,9 @@ p {
 
 .intro__text {
   position: absolute;
-  bottom: -80px;
+  bottom: -95px;
   font-size: 1.5em;
+  line-height: 1.2em;
   text-align: center;
   width: 80%;
   margin-left: 10%;
