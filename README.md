@@ -3,15 +3,15 @@ __*:lollipop: :candy:  CHALAL FARAU FENNANE KICHENAMOURTY STEPHAN :candy: :lolli
 
 &nbsp;
 
-Ce site web parle de la célèbre entreprise HARIBO , leader du marché mondial des gélifiés aux fruits et des bonbons à la réglisse !
+Ce site web est consacré à la célèbre entreprise **HARIBO** , leader du marché mondial des gélifiés aux fruits et des bonbons à la réglisse !
 
-Ce site Web n'a pas de but marketing mais de présenter la marque HARIBO et de raconter ses origines (origines des premiers bonbons emblématique ect...).
+Il crée dans un but non lucratif, en ayant pour objectif de présenter la marque HARIBO et de raconter ses origines (origines des premiers bonbons emblématique, ect.).
 
-Ce site web cible principalement les enfants afin qu'ils en sachent plus sur l'histoire d'HARIBO et de ses premiers bonbons.
+Ce site web cible pincipalement les enfants, de part grâce à son univers graphique mais aussi grâce à son interface ludique et intéractif contenant de divers animations.
 
-Ce site web à pour but d'être ludique et intéractif pour les enfants avec les divers animations.
+Ce projet a été mené dans le cadre d'une semaine intensive à **HETIC**.
 
-Remerciement à Calou Bastien et Raphaël Marquand pour cette semaine intensive ainsi que pour leur conseils avisé ! 
+Remerciement à **Bastien Calou** et **Raphaël Marquand** pour pour leur conseils avisés durant cette semaine intensive ! 
 
 [Lien GitHub](https://github.com/Benjigo93/hetic-w1p2021-10-neon)
 &nbsp;
