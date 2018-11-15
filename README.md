@@ -12,9 +12,6 @@ Ce site web cible principalement les enfants afin qu'ils en sachent plus sur l'h
 Ce site web à pour but d'être ludique et intéractif pour les enfants avec les divers animations.
 
 Remerciement à Calou Bastien et Raphaël Marquand pour cette semaine intensive ainsi que pour leur conseils avisé ! 
-&nbsp;
-&nbsp;
-&nbsp;
 
 [Lien GitHub](https://github.com/Benjigo93/hetic-w1p2021-10-neon)
 &nbsp;
