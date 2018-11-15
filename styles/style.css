@@ -22,7 +22,7 @@
 body {
   font-family: varGrounded;
   font-weight: normal;
-  background-color: #f7c563;
+  background-color: #ffcc55;
   overflow-x: hidden;
 }
 
@@ -670,13 +670,6 @@ p{
 }
 #product--1 .product__text--anecdote::before {
   animation: blink 1s 1 forwards;
-}
-
-@media screen and (max-width: 719px) {
-  .section--article,
-  .section--products--full {
-    min-height: 80vh;
-  }
 }
 
 @media (min-width: 720px) {
