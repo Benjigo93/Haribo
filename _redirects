@@ -1,8 +1,6 @@
-http://haribo.netlify.com/* https://haribo.netlify.com/:splat 301!
-/* /index.html 200
-/pages/article1.html  /histoire-de-haribo   301 
-/pages/article3.html  /histoire-de-bonbons  301
-/pages/produit1.html  /marshmallow          301
-/pages/produit2.html  /reglisse             301
-/pages/produit3.html  /ourson               301
+/histoire-de-haribo     /pages/article1.html    200!
+/histoire-de-bonbons    /pages/article3.html    200!
+/marshmallow            /pages/produit1.html    200!
+/reglisse               /pages/produit2.html    200!
+/ourson                 /pages/produit3.html    200!
 
