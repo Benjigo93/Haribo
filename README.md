@@ -1,5 +1,5 @@
 # Semaine Intensive d'Intégration | Équipe 10 - Néon
-__*:lollipop: :candy:  CHALAL FARAU FENNANE KICHENAMOURTY STEPHAN :candy: :lollipop:*__
+__*:lollipop: :candy:  [CHALAL](https://github.com/ChalalSamir) [FARAU](https://github.com/DFarau) [FENNANE](https://github.com/RyanFennane) [KICHENAMOURTY](https://github.com/Benjigo93) [STEPHAN](https://github.com/christinastep) :candy: :lollipop:*__
 
 &nbsp;
 
