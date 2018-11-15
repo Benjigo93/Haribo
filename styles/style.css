@@ -140,6 +140,10 @@ p {
   display: block;
 }
 
+.overview--articles__box{
+  cursor: pointer;
+}
+
 .section--article,
 .section--products--full {
   background-color: #ffcc55;
@@ -176,6 +180,12 @@ p {
 
   .product__box, .articles__box {
     padding-top: 40px;
+  }
+
+  .link--h1{
+    text-align: left;
+    z-index: 15;
+    width: 50vw;
   }
 }
 
@@ -329,7 +339,7 @@ p {
   }
 
   .header__logo {
-    width: 15%;
+    width: 20%;
   }
 
   .header__nav {
@@ -363,10 +373,6 @@ p {
 }
 
 @media screen and (min-width: 1366px) {
-  .header__logo {
-    width: 10%;
-  }
-
   .header {
     width: 100vw;
     padding: 2.5vw 4vw 1.5vw 4vw;
