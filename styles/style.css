@@ -2,37 +2,37 @@
   font-family: "varGrounded";
   src: url("fonts/VAGRoundedStd-Thin.woff2") format("woff2"),
     url("fonts/VAGRoundedStd-Thin.otf") format("opentype");
-    font-weight: thin;
+  font-weight: thin;
 }
 
 @font-face {
   font-family: "varGrounded";
   src: url("fonts/VAGRoundedStd-Bold.woff2") format("woff2"),
     url("fonts/VAGRoundedStd-Bold.otf") format("opentype");
-    font-weight: bold;
+  font-weight: bold;
 }
 
 @font-face {
   font-family: "varGrounded";
   src: url("fonts/VAGRoundedBT-Regular.woff2") format("woff2"),
     url("fonts/VAGRoundedBT-Regular.otf") format("opentype");
-    font-weight: normal;
+  font-weight: normal;
 }
 
 body {
   font-family: varGrounded;
   font-weight: normal;
-  background-color: #F7C563;
+  background-color: #f7c563;
   overflow-x: hidden;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
-a{
+a {
   text-decoration: none;
-  color:#000;
+  color: #000;
 }
 
 p{
@@ -51,21 +51,20 @@ p{
 
 
 
-
 /********************* HEADER *********************/
 
-.container{
+.container {
   display: block;
   width: 100vw;
   height: 100vh;
 }
 
-.header h1{
+.header h1 {
   display: none;
   text-indent: -12000px;
 }
 
-.header{
+.header {
   display: flex;
   position: fixed;
   text-align: center;
@@ -77,11 +76,11 @@ p{
   padding: 2vh;
 }
 
-.header__logo{
+.header__logo {
   width: 40%;
 }
 
-.header__nav{
+.header__nav {
   position: fixed;
   height: 48px;
   bottom: 19px;
@@ -91,20 +90,21 @@ p{
   border-radius: 25px;
   border: 0px solid #000000;
   background-color: #ffffff;
-  transition: left 0.8s ease, height 0.8s ease, bottom 0.8s ease, border 0.8s ease, border-radius 0.8s ease;
+  transition: left 0.8s ease, height 0.8s ease, bottom 0.8s ease,
+    border 0.8s ease, border-radius 0.8s ease;
 }
 
-.header__nav.is-open{
+.header__nav.is-open {
   height: 30vh;
   bottom: 10px;
   left: 10px;
-  right : 10px;
+  right: 10px;
   background-color: #fff;
   border: 4px solid #000000;
   border-radius: 0;
 }
 
-.header__nav__content{
+.header__nav__content {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -113,7 +113,7 @@ p{
   height: 30vh;
 }
 
-.header__nav.is-open .header__nav__content{
+.header__nav.is-open .header__nav__content {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -123,11 +123,11 @@ p{
   opacity: 1;
 }
 
-.header__nav.is-open .header__nav__icon{
+.header__nav.is-open .header__nav__icon {
   transform: translateX(-10px) translateY(-10px);
 }
 
-.header__nav__icon{
+.header__nav__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,7 +142,7 @@ p{
   transition: transform 0.3s ease;
 }
 
-.header__nav__icon__element{
+.header__nav__icon__element {
   width: 30px;
   height: 5px;
   display: block;
@@ -150,35 +150,36 @@ p{
   position: relative;
   transition: transform 0.3s ease, margin 0.3s ease;
 }
-.header__nav__icon__element::after, .header__nav__icon__element::before{
+.header__nav__icon__element::after,
+.header__nav__icon__element::before {
   width: 30px;
   height: 5px;
   display: block;
   background-color: #000000;
 }
 
-.header__nav__icon__element::before{
+.header__nav__icon__element::before {
   content: "";
   position: absolute;
   top: -10px;
 }
-.header__nav__icon__element::after{
+.header__nav__icon__element::after {
   content: "";
   position: absolute;
   bottom: -10px;
 }
 
-.header__nav.is-open .header__nav__icon__element::after{
+.header__nav.is-open .header__nav__icon__element::after {
   opacity: 0;
 }
 
-.header__nav.is-open .header__nav__icon__element{
+.header__nav.is-open .header__nav__icon__element {
   transform-origin: center bottom;
   transform: rotate(-45deg);
   margin-left: 3px;
 }
 
-.header__nav.is-open .header__nav__icon__element::before{
+.header__nav.is-open .header__nav__icon__element::before {
   transform-origin: center bottom;
   transform: rotate(90deg);
   margin-top: 8px;
@@ -236,12 +237,12 @@ p{
   }
 }
 
+
 @media screen and (min-width: 1366px) {
   .header__logo {
     width: 10%;
   }
 }
-
 
 /********************* FOOTER *********************/
 
@@ -254,7 +255,6 @@ p{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 20px 80px 20px 10px;
   font-size: 0.8em;
 }
 
@@ -286,17 +286,15 @@ p{
   border-radius: 5px;
 }
 
-
-.social__icons__icon--facebook{
+.social__icons__icon--facebook {
   background-position: -60px;
 }
-.social__icons__icon--instagram{
+.social__icons__icon--instagram {
   background-position: -30px;
 }
-.social__icons__icon--twitter{
+.social__icons__icon--twitter {
   background-position: 0px;
 }
-
 
 /********************* ALL PAGES *********************/
 
@@ -375,10 +373,10 @@ p{
 .section--products--full {
   background-color: #ffcc55;
   overflow-x: hidden;
-  min-height: 80vh;
 }
 
-.site--article .header, .site--produit .header{
+.site--article .header,
+.site--produit .header {
   margin-bottom: 100%;
 }
 
@@ -413,7 +411,7 @@ p{
   margin-left: 10%;
 }
 
-.intro__content{
+.intro__content {
   position: relative;
 }
 
