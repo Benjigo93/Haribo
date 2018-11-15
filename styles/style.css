@@ -2,18 +2,6 @@
 /*                KEYFRAMES                   */
 /*********************************************/
 
-@keyframes bounce--bear {
-  from {
-    bottom: -14px;
-  }
-  50% {
-    bottom: 0px;
-  }
-  to {
-    bottom: -14px;
-  }
-}
-
 @keyframes bounce--intro {
   from {
     opacity: 0;
@@ -74,35 +62,6 @@
   to {
     transform: scale(1.5);
     opacity: 1;
-  }
-}
-
-@keyframes arrow-to-left {
-  0% {
-    transform: translateX(0);
-  }
-
-  50% {
-    transform: translateX(-10px);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-
-@keyframes arrow-to-right {
-  0% {
-    transform: translateX(0);
-  }
-
-  50% {
-    transform: translateX(10px);
-  }
-
-  100% {
-    transform: translateX(0);
   }
 }
 
@@ -197,14 +156,16 @@ p {
 
 .headline--bear--right::after {
   right: 10px;
+  transition: bottom 0.4s ease;
 }
 .headline--bear--left::after {
   left: 10px;
+  transition: bottom 0.4s ease;
 }
 
 .headline--bear--right:hover::after,
 .headline--bear--left:hover::after {
-  animation: bounce--bear 0.4s ease;
+  bottom: 0;
 }
 
 .wrap--main {
@@ -724,8 +685,20 @@ p {
   padding-left: 5px;
 }
 
+.arrow__to__left {
+  transition: transform 0.5s ease;
+}
+
+.arrow__to__left:hover {
+  transform: translateX(-10px)
+}
+
+.arrow__to__right {
+  transition: transform 0.5s ease;
+}
+
 .arrow__to__right:hover {
-  animation: arrow-to-right 2s;
+  transform: translateX(10px)
 }
 
 
