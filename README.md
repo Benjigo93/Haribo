@@ -5,7 +5,7 @@ __*:lollipop: :candy:  [CHALAL](https://github.com/ChalalSamir) [FARAU](https://
 
 Ce site web est consacré à la célèbre entreprise **HARIBO** , leader du marché mondial des gélifiés aux fruits et des bonbons à la réglisse !
 
-Il crée dans un but non lucratif, en ayant pour objectif de présenter la marque HARIBO et de raconter ses origines (origines des premiers bonbons emblématique, ect.).
+Il a été crée dans un but non lucratif, en ayant pour objectif de présenter la marque HARIBO et de raconter ses origines (origines des premiers bonbons emblématique, ect.).
 
 Ce site web cible pincipalement les enfants, de part grâce à son univers graphique mais aussi grâce à son interface ludique et intéractif contenant de divers animations.
 
